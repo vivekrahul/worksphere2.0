@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%load static%}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worksphere</title>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container main-nav flex">
+        <a href="#" class="company-logo">
+          <img
+            src="{%static 'Resources/logo for hackathon.png'%}"
+            alt="company-logo"
+          />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li><a href="#" class="hover-link">Discover</a></li>
+            <li><a href="#" class="hover-link">Jobs</a></li>
+            <li><a href="#" class="hover-link">Learning</a></li>
+            <li><a href="#" class="hover-link">People</a></li>
+            <li>
+              <a href="accounts/login" class="hover-link secondary-button"
+                >Sign in</a
+              >
+            </li>
+            <li>
+              <a href="accounts/register" class="hover-link primary-button"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container header-section flex">
+        <div class="header-left">
+          <h1>Work Confidently</h1>
+          <p>
+            Worksphere is a remote user business and employment-focused social
+            media platform that brings a one-stop destination for opportunities,
+            connections, and interactions in the field of user's interest.
+          </p>
+          <a href="signup.html" class="primary-button get-started-btn"
+            >Get Started</a
+          >
+        </div>
+        <div class="header-right">
+          <img src="{%static 'Resources/meeting.png' %}" alt="Hero image" />
+          
+        </div>
+      </div>
+    </header>
+
+    <section class="companies-section">
+      <div class="container">
+        <div class="small-bold-text companies-header">
+          The world’s best companies rely on Worksphere to make better
+          recruitment decisions.
+        </div>
+        <div class="logos flex">
+          <img class="logo"  src="{%static 'Resources/5b46e726a0fccf7d78d81585_logo_amazon.png'%}" alt="" />
+          
+          <img class="logo" 
+           src="{%static 'Resources/5b46e726a09814d84e5a21c2_logo_asana.png'%}" alt="" />
+          <img class="logo" src="{%static
+            'Resources/5b46e726c3102cf1ebf0c2c0_logo_box.png'%}" alt="" />
+          <img class="logo" src="{%static
+            'Resources/5b46e8e6a0fccf20fed815e3_logo_taskrabbit.png'%}"
+          alt="" /> <img class="logo" 
+          src="{%static 'Resources/5b46e8e6ee75f135fc390ab6_logo_airtable.png'%}" alt=""
+          /> <img class="logo" src="{%static
+            'Resources/5b46e8e6b998def81a004629_logo_google.png'%}" alt="" />
+          <img class="logo" src="{%static
+            'Resources/5f7fda34692422757a1b3768_godaddy.svg'%}" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <div class="features-header">
+          <h2>Features</h2>
+        </div>
+        <div class="features-area flex">
+          <div class="features-card flex">
+            <img class="icon" src="{%static 'Resources/public-speech.png'%}" alt="event" />
+            <h3>Conduct events</h3>
+            <p>Conduct webinar/ seminar</p>
+          </div>
+          <div class="features-card flex">
+            <img class="icon" src="{%static 'Resources/45.png'%}" alt="Skill test%}" />
+            <h3>Skill tests</h3>
+            <p>Test your skills and get certification</p>
+          </div>
+          <div class="features-card flex">
+            <img class="icon" src="{%static 'Resources/44.png' %}" alt="event" />
+            <h3>Learn new skills</h3>
+            <p>Learn industry level skills</p>
+          </div>
+          <div class="features-card flex">
+            <img class="icon" src="{%static 'Resources/46.png'%}" alt="event" />
+            <h3>Connect with people</h3>
+            <p>Connect and follow top personnals and industries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="big-feature-section">
+      <div class="container flex big-feature-container">
+        <div class="feature-img">
+          <img src="{%static 'Resources/lady.png'%}" alt="" />
+        </div>
+        <div class="feature-desc flex">
+          <h3>World class mentors</h3>
+          <p>
+            Learn directly from the best of the world to upskill you and make
+            you industry ready
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="big-feature-section">
+      <div
+        class="container flex big-feature-container"
+        style="flex-direction: row-reverse"
+      >
+        <div class="feature-img">
+          <img src="{%static 'Resources/Untitled design 1.png'%}" alt="" />
+        </div>
+        <div class="feature-desc flex">
+          <h3>Event management</h3>
+          <p>
+            Join different webinars/seminars organised by top industry experts
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="FAQs">
+      <div class="container">
+        <div class="FAQs-header flex">
+          <h2 class="FAQs-heading-text">One platform endless possibilities</h2>
+        </div>
+        <div class="FAQs-area flex">
+          <div class="FAQs-card">
+            <div class="card-text">
+              <h3>How is the site helpful for me as a student?</h3>
+            </div>
+            <div class="ans">
+              <p>
+                You can connect to mentors and employers from across the world,
+                which will further help you to reach your goals.
+              </p>
+            </div>
+          </div>
+          <div class="FAQs-card">
+            <div class="card-text1">
+              <h3>How useful are the skill tests?</h3>
+            </div>
+            <div class="ans1">
+              <p>
+                All skill tests are fair enough to meet the industry needs and
+                are made by the respective experts.
+              </p>
+            </div>
+          </div>
+          <div class="FAQs-card">
+            <div class="card-text2">
+              <h3>Is there any way to connect with my alumni?</h3>
+            </div>
+            <div class="ans2">
+              <p>
+                There isn't any direct way to see your alumni but there are
+                green identifiers for the alumni profile, so you can visit the
+                respective profile and see yourself.
+              </p>
+            </div>
+          </div>
+          <div class="FAQs-card">
+            <div class="card-text3">
+              <h3>Are all these features free of cost?</h3>
+            </div>
+            <div class="ans3">
+              <p>
+                You can connect to mentors, employers, and industry experts from
+                across the world, which will further help you to reach your
+                goals
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="test-section">
+      <div class="container flex test-section-container">
+        <h2>Trial test</h2>
+        <p>Take the skill test</p>
+        <a href="signup.html" class="primary-button">Get Started</a>
+      </div>
+    </section>
+
+    <div class="sub-footer">
+      <div class="container flex sub-footer-container">
+        <a class="hover-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a class="hover-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <script
+    "{%static 'src="https://kit.fontawesome.com/5cbfac4b1e.js'%}"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

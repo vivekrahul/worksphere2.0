@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusSync</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;500&family=Roboto:wght@400;700&family=Sedgwick+Ave+Display&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .outerbox {
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to top left, #ffc8c8, #fefbbd);
+    }
+
+    .innerbox {
+      width: 400px;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px 40px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 2px 2px 5px #ffa559;
+      z-index: 2;
+    }
+
+    .signup-header h1 {
+      font-size: 1.5rem;
+      color: #ffa559;
+    }
+
+    .signup-body {
+      margin: 20px 0;
+    }
+
+    .signup-body p {
+      margin: 10px 0;
+    }
+
+    .signup-body p label {
+      display: block;
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    .signup-body p input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #606c38;
+      border-radius: 4px;
+      margin-top: 1px;
+    }
+
+    .signup-body p select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #606c38;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+
+    .signup-body p input[type="submit"] {
+      background: #ffa559;
+      border: none;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-size: 0.75em;
+      cursor: pointer;
+    }
+
+    .signup-body p input[type="submit"]:hover {
+      background: linear-gradient(to top left, #3f8ebf, #b9dbae);
+    }
+
+    .signup-footer {
+      color: #3a86ff;
+      text-align: center;
+    }
+
+    /*.circle{
+        width:200px ;
+        height: 200px;
+        border-radius: 100px;
+        background:linear-gradient(to top right, #ffc8c8,#fefbbd);
+        position: absolute;
+    }*/
+
+    .c1 {
+      top: 100px;
+      left: 40px;
+    }
+
+    .c2 {
+      bottom: 100px;
+      right: 40px;
+    }
+  </style>
+
+  <body>
+    <div class="outerbox">
+      <div class="innerbox">
+        <header class="signup-header">
+          <h1>Sign up</h1>
+        </header>
+        <main class="signup-body">
+          <form action="register" method="post">
+            {% csrf_token %}
+            <p>
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                name="first_name"
+                id="firstname"
+                placeholder="Your first name"
+              />
+            </p>
+            <p>
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                name="last_name"
+                id="Lastname"
+                placeholder="Your last name"
+              />
+            </p>
+            {% comment %}
+            <p>
+              <label for="branch">Purpose</label>
+              <select name="branch" id="branch">
+                <option value="Choose branch">Choose Purpose</option>
+                <option value="Aerospace Engineering">Job seeker</option>
+                <option value="Civil Engineering">Employer</option>
+              </select>
+            </p>
+            {% endcomment %}
+            <p>
+              <label for="username">Username</label>
+              <input
+                type="username"
+                name="username"
+                id="username"
+                placeholder="Your email id"
+              />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email id"
+              />
+            </p>
+            {% comment %}
+            <p>
+              <label for="SID">Phone Number</label>
+              <input type="number" id="SID" placeholder="Your phone number" />
+            </p>
+            {% endcomment %}
+            <p>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password1"
+                id="password"
+                placeholder="Set password"
+              />
+            </p>
+            <p>
+              <label for="confirm password">Confirm password</label>
+              <input
+                type="password"
+                name="password2"
+                id="confirm password"
+                placeholder="Write password again"
+              />
+            </p>
+            <p>
+              <input type="submit" id="submit" value="Sign up" />
+            </p>
+          </form>
+        </main>
+        <footer class="signup-footer">
+          <p>Already have an Account? <a href="#">Login</a></p>
+        </footer>
+      </div>
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+    </div>
+  </body>
+</html>

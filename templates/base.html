@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worksphere</title>
+    <link rel="stylesheet" href={%static 'style.css'%} />
+  </head>
+  <body bgcolor="cyan">
+    {%block content %}
+    <nav>
+      <div class="container main-nav flex">
+        <a href="#" class="company-logo">
+          <img src="Resources/logo for hackathon.png" alt="company-logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li><a href="#" class="hover-link">Discover</a></li>
+            <li><a href="#" class="hover-link">Jobs</a></li>
+            <li><a href="#" class="hover-link">Learning</a></li>
+            <li><a href="#" class="hover-link">People</a></li>
+            <li><a href="#" class="hover-link secondary-button">Sign in</a></li>
+            <li><a href="#" class="hover-link primary-button">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header><div class="container"></div></header>
+
+    <section class="companies-section">
+      <div class="container"></div>
+    </section>
+    <section class="features-section"><div class="container"></div></section>
+    <section class="mentoring"></section>
+    <section class="learning"></section>
+    <section class="FAQs"></section>
+    <footer></footer>
+    <div class="sub-footer"></div>
+
+    <script
+      src="https://kit.fontawesome.com/5cbfac4b1e.js"
+      crossorigin="anonymous"
+    ></script>
+    {%endblock%}
+  </body>
+</html>
